@@ -95,7 +95,6 @@
               </script> 
 
               <script type="text/javascript">
-              var position = 0;
 
               $("#inputButton3").click(function(){
                 for (var i = 2; i < 5; i++){
@@ -114,13 +113,13 @@
                 $("p").css("color", $("#inputText").val());
               }
 
-              var pos = 0;
+              var pos = 1;
 
 				function firstChild(){
 					var text = document.getElementById("table").firstElementChild.innerHTML;
 					text += ". Тип элемента: " + document.getElementById("table").firstElementChild.tagName;
 					document.getElementById('inputText2').value = text;
-					pos = 0;
+					pos -= 1;
 				}
 				
 				function prevChild(){
