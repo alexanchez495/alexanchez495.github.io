@@ -114,29 +114,35 @@
                 $("p").css("color", $("#inputText").val());
               }
 
-              function firstChild(){
-                $("#inputButton2").val($('#table').find(':first-child').html() + ". Тип - " + $('#table').find(':first-child')[0].tagName);
-                position = 0;
-              }
-              
-              function prevChild(){
-                if (position != 0){
-                  $("#inputButton2").val($("#" + position + "").prev().html() + ". Тип - " + $("#" + position + "").prev()[0].tagName);
-                  position -= 1;
-                }
-              }
-              
-              function nextChild(){
-                if (position != ($('#table > li').length - 1)){
-                  $("#inputButton2").val($("#" + position + "").next().html() + ". Тип - " + $("#" + position + "").next()[0].tagName);
-                  position += 1;
-                }
-              }
-              
-              function lastChild(){
-                $("#inputButton2").val($('#table').find(':last-child').html() + ". Тип - " + $('#table').find(':last-child')[0].tagName);
-                position = $('#table > li').length - 1;
-              }
+              var pos = 0;
+
+				function firstChild(){
+					var text = document.getElementById("table").firstElementChild.innerHTML;
+					text += ". Тип элемента: " + document.getElementById("table").firstElementChild.tagName;
+					document.getElementById('inputText2').value = text;
+					pos = 0;
+				}
+				
+				function prevChild(){
+					var text = document.getElementById('table').getElementsByTagName('tr')[pos].previousElementSibling.innerHTML;
+					text += ". Тип элемента: " + document.getElementById('table').getElementsByTagName('tr')[pos].previousElementSibling.tagName;
+					pos -= 1;
+					document.getElementById('inputText2').value = text;
+				}
+				
+				function nextChild(){
+					var text = document.getElementById('table').getElementsByTagName('tr')[pos].nextElementSibling.innerHTML;
+					text += ". Тип элемента: " + document.getElementById('table').getElementsByTagName('tr')[pos].nextElementSibling.tagName;
+					pos += 1;
+					document.getElementById('inputText2').value = text;
+				}
+				
+				function lastChild(){
+					var text = document.getElementById("table").lastElementChild.innerHTML;
+					text += ". Тип элемента: " + document.getElementById("table").lastElementChild.tagName;
+					document.getElementById('inputText2').value = text;
+					pos = 4;
+				}
 
               $("#but5").click(function(){
                 var height = [];  
