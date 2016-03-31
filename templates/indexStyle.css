@@ -1,0 +1,100 @@
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#page-wrap { 
+    position: relative;
+    width: 780px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background: white; 
+    box-shadow: 0 0 20px black;
+}
+
+p { 
+    font: 20px/2 Georgia, Serif;
+} 
+
+#menu ul{
+   float: left;
+   position: relative; 
+   left: 45%; 
+}
+#menu ul li{
+   list-style: none; 
+   float: left; 
+   position: relative; 
+   right: 50%; 
+}
+
+#menu ul li a{
+   text-decoration: none; 
+   display: block; 
+   padding: 0 10px; 
+   color: #000000; 
+   text-transform: uppercase;
+   font: 20px/2 Georgia, Serif;
+}
+
+a:hover {
+   background: #c6caeb;  
+   color: #000000; 
+   box-shadow: 0 1px 2px #000;
+} 
+
+.slider {
+     z-index: 9;
+     width: 780px;
+     height: 585px;
+     overflow: hidden;
+     margin: 0 0 7px;
+     position: relative;
+
+ }
+ .slider ul,.slider li {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+
+ }
+ .slider ul {
+     width: 9999px; 
+ }
+ .slider ul li {
+     list-style-type: none;
+     float: left;
+     width: 780px;
+     height: 585px;
+ }
+ .slider .nav {
+     position: absolute;
+     left: 15px;
+     bottom: 12px; 
+ }
+ .slider .nav span {
+     opacity: 0.9;
+     background: #fff;
+     margin: 0 8px 0 0;
+     width: 16px;
+     height: 16px;
+     border-radius: 8px;
+     cursor: pointer;
+     overflow: hidden;
+     display: block;
+     float: left;
+     box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+    background: #c6caeb;
+ }
