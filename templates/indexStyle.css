@@ -1,13 +1,10 @@
 img.bg {
-    /* Set rules to fill background */
     min-height: 100%;
     min-width: 1024px;
     
-    /* Set up proportionate scaling */
     width: 100%;
     height: auto;
     
-    /* Set up positioning */
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +26,7 @@ p {
 #menu ul{
    float: left;
    position: relative; 
-   left: 45%; 
+   left: 44%; 
 }
 #menu ul li{
    list-style: none; 
@@ -47,7 +44,7 @@ p {
    font: 20px/2 Georgia, Serif;
 }
 
-a:hover {
+#menu a:hover {
    background: #c6caeb;  
    color: #000000; 
    box-shadow: 0 1px 2px #000;
@@ -62,28 +59,32 @@ a:hover {
      position: relative;
 
  }
+
  .slider ul,.slider li {
      padding: 0;
      margin: 0;
      list-style-type: none;
 
  }
+
  .slider ul {
      width: 9999px; 
  }
+
  .slider ul li {
      list-style-type: none;
      float: left;
      width: 780px;
      height: 585px;
  }
+
  .slider .nav {
      position: absolute;
      left: 15px;
      bottom: 12px; 
  }
+
  .slider .nav span {
-     opacity: 0.9;
      background: #fff;
      margin: 0 8px 0 0;
      width: 16px;
@@ -95,6 +96,19 @@ a:hover {
      float: left;
      box-shadow: 0 1px 2px #000;
  }
+
  .slider .nav span.on {
-    background: #c6caeb;
+    background: #8b91c3;
  }
+
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.9;
+    position:fixed;
+    bottom:400px;
+    right:200px;
+    display:none;
+    text-indent:-9999px;
+    background: url('icon_top.png') no-repeat;
+}
