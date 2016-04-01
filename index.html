@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta>a http-equiv="Content-Language" content="ru"/>
         <title>Кумыс</title>
         <link rel="stylesheet" type="text/css" href="templates/indexStyle.css"/>
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -11,18 +10,18 @@
     <body>
 
         <img src="images/pattern.jpg" class="bg">
-        
         <div id="page-wrap">
-        
             <div id="menu">
                 <ul>
                     <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%BC%D1%8B%D1%81">Википедия</a></li>
                     <li><a href="https://ru.wikibooks.org/wiki/%D0%A0%D0%B5%D1%86%D0%B5%D0%BF%D1%82:%D0%9A%D1%83%D0%BC%D1%8B%D1%81">Рецепт</a></li>
                     <li><a href="http://sankurtur.ru/methods/1986/#kumys-4">Кумысотерапия</a></li>
-                    <li><a href="http://www.kumys.ru/">Купить</a></li>
-                    <li><a href="video.html">Видео</a></li>   
+                    <li><a href="video.html">Видео</a></li>
+                    <li><a href="text.html">Описание</a></li>  
                 </ul>
             </div>
+            <script type="text/javascript" src="scripts/scroll.js"></script>
+            <script type="text/javascript" src="scripts/slider.js"></script>
             <div class="slider">
                 <ul>
                     <li><img src="images/1.jpg" width=100% height=100% alt="Картинка1"></li>
@@ -46,6 +45,7 @@
             Кумыс полезен для желудка, он нормализует секреторную деятельность органов пищеварения, оказывает благотворное воздействие при язве желудка и двенадцатиперстной кишки, полезен при дизентерии и брюшном тифе. Кумысолечение оказывает благотворное действие на кровь: повышается содержание гемоглобина, улучшается лейкоцитарная формула. Он обладает бактерицидными свойствами, способностью выделять антибиотические вещества, которые предупреждают и лечат туберкулез, сердечно-сосудистые заболевания. В некоторой степени кумыс способен замедлить развитие рака.
             Противопоказаниями к кумысолечению являются болезни желудочно-кишечного тракта в стадии обострения и индивидуальная непереносимость к кумысу. Возрастных противопоказаний к кумысу нет, он одинаково полезен и детям, и взрослым, и пожилым людям.</p>
 
+            <!-- яндекс поиск. если не работает - не проиндексировали еще сайт -->
             <p>Поиск по сайту:</p>
             <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://yandex.ru/search/site/','arrow':false,'bg':'#d3d7fa','fontsize':26,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по alexanchez495.github.io','suggest':true,'target':'_self','tld':'ru','type':3,'usebigdictionary':true,'searchid':2264538,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Поиск','input_placeholderColor':'#cccccc','input_borderColor':'#c6caeb'}">
                 <form action="https://yandex.ru/search/site/" method="get" target="_self">
@@ -63,13 +63,12 @@
 
             <hr color="#e8edff"><p>Статистика по сайту:</p>
 
-            <!-- Yandex.Metrika informer -->
+            <!-- статистика яндекса (визуальный счетчик) -->
             <a href="https://metrika.yandex.ru/stat/?id=36431520&amp;from=informer"
             target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/36431520/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
             style="width:160px; height:56px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:36431520,lang:'ru'});return false}catch(e){}" /></a>
-            <!-- /Yandex.Metrika informer -->
 
-            <!-- Yandex.Metrika counter -->
+            <!-- сам счетчик -->
             <script type="text/javascript">
                 (function (d, w, c) {
                     (w[c] = w[c] || []).push(function() {
@@ -97,12 +96,8 @@
                 })(document, window, "yandex_metrika_callbacks");
             </script>
             <noscript><div><img src="https://mc.yandex.ru/watch/36431520" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-            <!-- /Yandex.Metrika counter -->
             </div>  
-
         </div>
-
-        <script type="text/javascript" src="scripts/slider.js"></script>
-
+        <a href="#" class="scrollup">Наверх</a>
     </body>
 </html>

@@ -3,19 +3,26 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Language" content="ru"/>
-        <title>Кумыс</title>
-        <link rel="stylesheet" type="text/css" href="templates/indexStyle.css"/>
+        <title>Видео</title>
+        <link rel="stylesheet" type="text/css" href="templates/videoStyle.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     </head>
 
     <body>
-
+        <script type="text/javascript" src="scripts/scroll.js"></script>
         <img src="images/pattern.jpg" class="bg">
         
         <div id="page-wrap">
             <p align="center">Что такое кумыс? Как его получают? Почему кумыс делают из молока лошади?</p> 
             <iframe width="780" height="585" src="https://www.youtube.com/embed/VbXVCShXcZI" frameborder="0" allowfullscreen></iframe>
             <video src="videos/kumys1.mp4" width="780" height="585" controls="controls"></video>
+            <script type='text/javascript'>
+            function back() {
+               location.assign('http://alexanchez495.github.io/');
+            }
+            </script>
+            <input type="button" value="Вернуться на главную" onclick="back()" id="back"/>
         </div>
-
+        <a href="#" class="scrollup">Наверх</a>
     </body>
 </html>
