@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Описание</title>
+        <link rel="stylesheet" type="text/css" href="templates/opisStyle.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript" src="scripts/scroll.js"></script>
+        <img src="images/pattern.jpg" class="bg">
+        <div id="page-wrap">
+            <p align="center">"Разработка и реализация портальных решений" Хомутский А. ПИ3-2</p> 
+            <hr><p align="left">Список требований:</p>
+            <ul>
+                <li>Сайт, созданный на любом бесплатном хостинге</li>
+                <li>Эссе по возможностям Вашего хостинга</li>
+                <li>Модуль поиска от любого поискового сервиса</li>
+                <li>2 видео в проигрывателях разных стандартов</li>
+                <li>Модуль сбора статистики от любого сайта или топа</li>
+                <li>Cтраница, целиком написанная на HTML</li>
+                <li>Страница с собственным стилем CSS</li>
+                <li>Пример JavaScript</li>
+                <li>BOM</li>
+                <li>DOM</li>
+                <li>jQuery</li>
+            </ul>
+            <hr><p align="left">Описание сайта и выполнения требований:</p>
+            <p align="justify">
+            В качестве хостинга был выбран GitHub - сервис <a href="https://pages.github.com/">GitHub Pages</a>. Суть заключается в том, что создавая репозиторий на GitHub, можно разместить исходники статического сайта и показывать их как сайт. В данном случае, это полезно так как необходимо разместить простой сайт и не беспокоиться о деталях работы с хостингом плюс весь функционал GitHub для работы с репозиторием.
+            <br>На портале есть 3 html-страницы: index.html (стартовая), video.html (страница с видео), text.html (эта страница); каждая страница имеет свой CSS-стиль: indexStyle.css, videoStyle.css и opisStyle.css соответственно. 
+            <br>Модуль поиска - Яндекс.Поиск (может не работать, т.к. на момент написания текста сайт еще не был проиндексирован).
+            <br>Модуль сбора статистики - Яндекс.Метрика.
+            <br>Два видео - одно в проигрывателе HTML5, другое в проигрывателе YouTube.
+            <br>Пример JavaScript и BOM - кнопка возврата на главную.
+            <br>Пример DOM - кнопка "Вверх".
+            <br>Пример jQuery - кнопка "Вверх" и слайдер изображений на главной.
+            </p>
+            <script type='text/javascript'>
+            function back() {
+               location.assign('http://alexanchez495.github.io/');
+            }
+            </script>
+            <input type="button" value="Вернуться на главную" onclick="back()" id="back"/>
+        </div>
+        <a href="#" class="scrollup">Наверх</a>
+    </body>
+</html>
