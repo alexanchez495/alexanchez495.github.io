@@ -104,8 +104,8 @@ p {
 .scrollup{
     width:40px;
     height:40px;
-    opacity:0.9;
-    position:absolute;
+    opacity:0.7;
+    position:fixed;
     bottom:400px;
     right:200px;
     display:none;
