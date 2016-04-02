@@ -1,6 +1,7 @@
+// скроллер
 $(document).ready(function(){
 
-	$(window).scroll(function(){
+	$(window).scroll(function(){ // отображение/угасание кнопки
 		if ($(this).scrollTop() > 100) {
 			$('.scrollup').fadeIn();
 		} else {
@@ -8,7 +9,7 @@ $(document).ready(function(){
 		}
 	});
 	 
-	$('.scrollup').click(function(){
+	$('.scrollup').click(function(){ // вверх 
 		$("html, body").animate({ scrollTop: 0 }, 600);
 		return false;
 	});
