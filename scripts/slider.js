@@ -1,3 +1,4 @@
+// слайдер
 $(document).ready(function() {
 
             $(".slider").each(function () { // обрабатываем каждый слайдер
