@@ -1,0 +1,67 @@
+/* фуллсайз фона */
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    
+    width: 100%;
+    height: auto;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* область текста */
+#page-wrap { 
+    position: relative;
+    width: 780px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background: white; 
+    box-shadow: 0 0 20px black;
+}
+
+p { 
+    font: 20px/2 Georgia, Serif;
+    text-align: center
+} 
+
+/* меню */
+#menu ul{
+   float: left;
+   position: relative; 
+   left: 44%; 
+}
+#menu ul li{
+   list-style: none; 
+   position: relative; 
+   right: 50%; 
+}
+
+#menu ul li a{
+   text-decoration: none; 
+   display: block; 
+   padding: 0 250px ; 
+   color: #000000; 
+   text-transform: uppercase;
+   font: 20px/2 Georgia, Serif;
+}
+
+#menu a:hover {
+   background: #c6caeb;  
+   color: #000000; 
+   box-shadow: 0 1px 2px #000;
+} 
+
+/* "вверх" */
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.7;
+    position:fixed;
+    bottom:400px;
+    right:200px;
+    display:none;
+    text-indent:-9999px;
+    background: url('icon_top.png') no-repeat;
+}
